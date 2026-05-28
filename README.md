@@ -1,16 +1,56 @@
-# React + Vite
+# 🎲 GitHub Random Repository Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web app that fetches a random GitHub repository based on a selected programming language using the GitHub Search API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🌐 Fetches random repositories from the GitHub API
+- 🔤 Filter by programming language
+- ⭐ Displays repo name, description, stars, forks, language and open issues
+- 🎨 Clean UI with Tailwind CSS and glassmorphism design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GitHub Search API](https://docs.github.com/en/rest/search)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── App.jsx             # Main component, state and fetch logic
+├── LanguageSelector.jsx # Language dropdown
+├── Repocard.jsx        # Displays repo data
+└── Fetch.jsx           # Fetch button
+```
+
+---
+
+## 📡 API Used
+
+```
+https://api.github.com/search/repositories?q=language:{language}&sort=stars
+```
+
+No API key required — GitHub's public API is used directly.
+
+---
+
+## 🤝 Contributing
+
+This is a personal learning project — feel free to fork and build on it!
+
+---
+
+## 👤 Author
+
+**Saumek**  
+GitHub: [@Saum-ek](https://github.com/Saum-ek)
